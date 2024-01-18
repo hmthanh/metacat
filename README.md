@@ -27,6 +27,10 @@ yarn
 npx hardhat node
 ```
 
+```sh
+npx hardhat test
+```
+
 3. With the network running, deploy the contracts to the local network in a separate terminal window
 
 ```sh

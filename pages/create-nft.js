@@ -41,7 +41,8 @@ export default function CreateItem() {
     })
     try {
       const added = await client.add(data)
-      const url = `https://ipfs.infura.io/ipfs/${added.path}`
+      // const url = `https://ipfs.infura.io/ipfs/${added.path}`
+      const url = `http://127.0.0.1:8080/${added.path}`
       /* after file is uploaded to IPFS, return the URL to use it in the transaction */
       return url
     } catch (error) {
